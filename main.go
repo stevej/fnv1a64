@@ -18,8 +18,8 @@ func main() {
 	}
 
 	hasher := fnv.New64a()
-	_, err2 := hasher.Write(bytes)
-	if err2 != nil {
+	_, err = hasher.Write(bytes)
+	if err != nil {
 		log.Panicf("could not hash values %s", err)
 	}
 
